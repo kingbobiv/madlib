@@ -1,0 +1,10 @@
+body {
+  padding: 50px;
+}
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+.madlib-output {
+  display:none;
+}

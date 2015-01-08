@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>CodePen - Angular Madlib</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="madlib-wrapper" ng-app>
+  <h1>Angular Madlib</h1>
+
+  <div class="input-container">
+    <input type="text" ng-model="sillyword" placeholder="Silly Word" />
+    <input type="text" ng-model="lastname" placeholder="Last Name" />
+    <input type="text" ng-model="illness" placeholder="Illness" />
+    <input type="text" ng-model="noun" placeholder="Noun (Plural)" />
+    <input type="text" ng-model="adjective" placeholder="Adjective" />
+    <input type="text" ng-model="adjective2" placeholder="Adjective" />
+    <input type="text" ng-model="sillyword2" placeholder="Silly Word" />
+    <input type="text" ng-model="place" placeholder="Place" />
+    <input type="text" ng-model="number" placeholder="Number" />
+    <input type="text" ng-model="adjective3" placeholder="Adjective" />
+    <button id="madlib-toggle">Madlib It!</button>
+  </div>
+
+  <p class="madlib-output">Dear School Nurse:<br /><br />
+  {{sillyword}} {{lastname}} will not be attending school today. They have come down with a case of {{illness}} and has horrible {{noun}} and {{adjective}} fever. We have made an appointment with the {{adjective2}} Dr. {{sillyword2}}, who studied for many years in {{place}} and has {{number}} degrees in pediatrics. He will send you all the information you need. Thank you!<br /><br />
+  Sincerely,<br />
+  A {{adjective3}} parent
+  </p>
+</div>
+
+  <script src='http://codepen.io/assets/libs/fullpage/angular.js'></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
